@@ -14,7 +14,7 @@ def do_deploy(archive_path):
         True if all operations have been done correctly, otherwise False
     """
 
-    if not exists(archive_path):
+    if exists(archive_path) is False:
         return False
     try:
         file_n = archive_path.split("/")[-1]

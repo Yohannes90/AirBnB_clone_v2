@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ deploy or distribute an archive to a web servers"""
-from os.path import exists
+from os.path import exists, isdir
 from datetime import datetime
 from fabric.api import put, run, env, local
 
